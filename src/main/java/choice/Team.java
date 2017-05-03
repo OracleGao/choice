@@ -13,16 +13,16 @@ public class Team extends StoppableThread {
 	public void doOnce() {
 		if (oracle.isChoosed()) {
 			if (getName().equals(oracle.getChoice())) {
-				System.out.println("For Glory of " + oracle.getChoice());
+				System.out.println("for " + oracle.getChoice() + "'s future");
 			}
 		}
 	}
 
-	public Oracle getOracle() {
+	public Oracle getTeammate() {
 		return oracle;
 	}
 
-	public void setOracle(Oracle oracle) {
+	public void setTeammate(Oracle oracle) {
 		this.oracle = oracle;
 	}
 
